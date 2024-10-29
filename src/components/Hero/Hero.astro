@@ -1,0 +1,38 @@
+---
+import CTA from '@/components/CTA.astro'
+import Container from '@/components/Container.astro'
+import { clients } from '@/components/Hero/clients'
+import Separator from '@/components/Separator.astro'
+---
+<Container>
+  <section class="min-h-dvh h-fit w-full">
+    <!-- HEADLINE -->
+    <div class="max-w-xl w-full flex flex-col gap-8 py-24">
+      <!-- INFO CLIENT -->
+      <div class="w-fit flex items-center text-sm text-zinc-400 py-1 px-4 rounded-full bg-zinc-700/25 border border-zinc-600/25">
+        {clients.map(client => (
+          <img 
+            class="h-8 w-8 rounded-full border-2 border-zinc-800 -ml-2.5 first:ml-0" 
+            src={client.image} 
+            alt={client.name} 
+          />
+        ))}
+        +30 alunos satisfeitos.
+      </div>
+
+      <!-- TITLE -->
+      <div class="flex flex-col gap-4">
+        <h1 class="font-semibold text-[2.5rem] leading-tight">
+          Aprenda a vender suas consultorias na <span class="text-yellow-400 bg-gradient-to-r from-yellow-500 from-0% via-yellow-400 via-30% to-yellow-200 to-110% text-transparent bg-clip-text">primeira conversa</span> com os seus leads
+        </h1>
+        <h2 class="max-w-lg text-zinc-400 leading-normal">
+          E pare de perder tempo em follow-up com leads que só te enrolam quando você apresenta o preço.
+        </h2>
+      </div>
+
+      <!-- CTA -->
+      <CTA />
+
+    </div>
+  </section>
+</Container>
