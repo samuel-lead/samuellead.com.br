@@ -1,0 +1,22 @@
+---
+interface Props {
+  titleCard: string
+  srcImage: string
+}
+
+const { titleCard, srcImage } = Astro.props
+---
+
+<li class="w-[405px] h-fit flex flex-col gap-4 p-4 rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-zinc-50/15">
+  <h4 class="font-semibold text-xl py-4">
+    {titleCard}
+  </h4>
+
+  <div class="w-full">
+    <img 
+      class="w-full h-fit object-contain rounded-xl"
+      src={srcImage} 
+      alt="Print de depoimento" 
+    />
+  </div>
+</li>
