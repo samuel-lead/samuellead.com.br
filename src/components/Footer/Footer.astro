@@ -1,0 +1,12 @@
+---
+import Container from '@/components/Container.astro'
+import CurrentYear from '@/components/Footer/CurrentYear.astro'
+---
+
+<footer class="w-full py-8">
+  <Container class='flex justify-center items-center gap-4'>
+    <CurrentYear client:visible />
+    <div class="size-1 rounded-full bg-zinc-400" />
+    <span class="text-sm text-zinc-400">Todos os direitos reservados.</span>
+  </Container>
+</footer>
