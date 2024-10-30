@@ -11,7 +11,13 @@ const { tag, className } = Astro.props
 ---
 
 <div class={cn("w-full flex flex-col items-center gap-4 text-center", className)}>
-  <Badge className='tracking-[.24rem] uppercase w-fit font-normal text-xs text-zinc-400 py-1 px-5 bg-zinc-700/25 border border-zinc-500/25' variant="default">{tag}</Badge>
+  <Badge 
+    className='tracking-[.24rem] uppercase w-fit font-normal text-xs text-zinc-400 py-1 px-5 bg-zinc-700/25 border border-zinc-500/25 hover:bg-zinc-700/25' 
+    variant="default"
+  >
+    {tag}
+  </Badge>
+  
   <h2 class="font-semibold text-3xl">
     <slot />
   </h2>
