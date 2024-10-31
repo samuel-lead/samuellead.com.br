@@ -4,9 +4,9 @@ import { CurrentYear } from '@/components/Footer/CurrentYear'
 ---
 
 <footer class="w-full py-8">
-  <Container class='flex justify-center items-center gap-4'>
+  <Container class='flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 px-5'>
     <CurrentYear client:only="react" />
-    <div class="size-1 rounded-full bg-zinc-400" />
+    <div class="hidden sm:block size-1 rounded-full bg-zinc-400" />
     <span class="text-sm text-zinc-400">Todos os direitos reservados.</span>
   </Container>
 </footer>
