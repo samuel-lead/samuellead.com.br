@@ -1,0 +1,25 @@
+---
+import { IconMeet } from '@/components/IconMeet'
+import { Badge } from '@/components/ui/badge'
+import { CalendarDays, Clock3 } from 'lucide-react'
+---
+
+<Badge variant="default" className='items-center gap-4 py-1'>
+  <!-- DAY -->
+  <div class="flex items-center gap-1">
+    <CalendarDays className='size-5 text-yellow-200' />
+    <span class="font-normal uppercase text-zinc-400 tracking-widest">Quinta-feira</span>
+  </div>
+
+  <!-- HOUR -->
+  <div class="flex items-center gap-1">
+    <Clock3 className='size-5 text-yellow-200' />
+    <span class="font-normal uppercase text-zinc-400 tracking-widest">19h00</span>
+  </div>
+
+  <!-- LOCALE -->
+  <div class="flex items-center gap-1">
+    <IconMeet />
+    <span class="font-normal uppercase text-zinc-400 tracking-widest">Quinta-feira</span>
+  </div>
+</Badge>
