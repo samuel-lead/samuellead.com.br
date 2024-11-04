@@ -1,13 +1,12 @@
 ---
 import CTA from '@/components/CTA.astro'
 import Container from '@/components/Container.astro'
-import CountClients from '@/components/Hero/CountClients.astro'
 import Headline from '@/components/Hero/Headline.astro'
 ---
 <section class="relative min-h-dvh h-full w-full md2:flex justify-center items-center bg-[url('/images/hero/bg-small.webp')] md2:bg-[url('/images/hero/bg-large.webp')] bg-top bg-cover bg-no-repeat">
   <Container class='min-h-dvh h-full flex items-center px-5'>
-    <div class="max-w-2xl md2:max-w-xl md2:w-full flex flex-col items-center md2:items-start gap-4 md2:gap-8 mx-auto md2:mx-0 py-24">
-      <CountClients />
+    <div class="max-w-2xl md2:max-w-[558px] md2:w-full flex flex-col items-center md2:items-start gap-4 md2:gap-8 mx-auto md2:mx-0 py-24">
+      <img class="h-10" src="/images/logo.svg" alt="Logo Aula Magna" >     
       <Headline />
       <CTA />
     </div>
