@@ -1,0 +1,46 @@
+---
+import Container from "@/components/Container.astro";
+import Title from "@/components/Title.astro";
+import BigNumbers from '@/components/Biography/BigNumbers.astro'
+import CTA from "@/components/CTA.astro";
+---
+
+<section class="py-[120px] flex flex-col items-center gap-8">
+  <Container class="relative flex rounded-2xl border border-zinc-50/15 overflow-hidden">
+    <!-- IMAGE -->
+    <div class="relative w-1/2">
+      <img 
+        class="absolute -top-28 object-cover"
+        src="/images/biography/img-bio.webp" 
+        alt="Foto do expert"
+      >
+    </div>
+
+    <div class="absolute z-10 top-0 left-1/2 -translate-x-1/2 w-px h-full bg-gradient-to-b from-transparent via-zinc-50 to-transparent" />
+
+    <!-- TEXT -->
+    <div class="w-1/2 flex flex-col gap-8 p-16">
+      <Title className="items-start" tag="Quem sou eu?">
+        Samuel Pereira
+      </Title>
+
+      <div class="flex flex-col gap-4 text-zinc-400">
+        <p>
+          Trabalho com marketing e vendas há 5 anos, já fui dono de agência com mais de 40 clientes, e fizemos algumas dezenas de lançamentos de infoprodutos.
+        </p>
+
+        <p>
+          E durante esse período desenvolvi uma metodologia única de vendas capaz de fazer o lead tomar a decisão de compra na primeira conversa.
+        </p>
+
+        <p>
+          Independente se é por call, direct ou WhatsApp.
+        </p>
+      </div>
+
+      <BigNumbers />
+    </div>
+  </Container>
+
+  <CTA />
+</section>
