@@ -1,8 +1,7 @@
 ---
-import CTA from "../CTA.astro";
-import Container from "../Container.astro";
-import WhatsApp from "../WhatsApp.astro";
-import { Button } from "../ui/button";
+import Container from "@/components/Container.astro";
+import WhatsApp from "@/components/WhatsApp.astro";
+import CTA from "@/components/CTA.astro";
 
 ---
 
@@ -21,10 +20,10 @@ import { Button } from "../ui/button";
           </h2>
         </div>
         
-        <Button className="font-semibold max-w-80 w-full text-base text-wrap leading-tight text-zinc-950 py-4 px-4 xs:px-8 rounded-full bg-gradient-to-r from-yellow-500 from-0% via-yellow-400 via-30% to-yellow-200 to-110% shadow-xl shadow-zinc-950/25 transition-all hover:bg-yellow-500 hover:scale-95">
+        <CTA url="/">
           Entrar no grupo
           <WhatsApp />
-        </Button>
+        </CTA>
       </div>
     </Container>
   </div>
