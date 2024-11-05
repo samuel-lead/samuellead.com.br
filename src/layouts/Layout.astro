@@ -13,8 +13,9 @@ const { title } = Astro.props
 <!doctype html>
 <html lang="pt-BR">
 	<head>
+		<!-- TODO: Descomentar para ativar o GTM -->
 		<!-- Google Tag Manager -->
-    <script is:inline>
+    <!-- <script is:inline>
 		(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
         'gtm.start':
@@ -22,7 +23,7 @@ const { title } = Astro.props
       }); var f = d.getElementsByTagName(s)[0],
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WL8SXD6D');</script>
+    })(window, document, 'script', 'dataLayer', 'GTM-WL8SXD6D');</script>-->
     <!-- End Google Tag Manager -->
 
 		<!-- Open Graph / Facebook -->
@@ -53,9 +54,10 @@ const { title } = Astro.props
 		<ViewTransitions />
 	</head>
 	<body class="min-h-dvh w-full bg-zinc-950 text-zinc-50">
+		<!-- TODO: Descomentar para ativar o GTM -->
 		<!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL8SXD6D" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL8SXD6D" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript> -->
 		<!-- End Google Tag Manager (noscript) -->
 
 		<slot />
