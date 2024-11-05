@@ -1,22 +1,28 @@
 ---
 import Container from "@/components/Container.astro";
 import CTA from '@/components/CTA.astro'
+import WhatsApp from "@/components/WhatsApp.astro";
 
 ---
 
-<section class="w-full">
-  <Container class="relative flex justify-center bg-zinc-50 rounded-2xl px-16 py-20 bg-[url('/images/impact/texture-impact.webp')] bg-cover bg-center">
+<section class="w-full px-5">
+  <Container class="relative flex justify-center bg-zinc-50 rounded-2xl px-8 sm:px-16 py-20 bg-[url('/images/impact/texture-impact.webp')] bg-cover bg-center">
     <img
       class="absolute z-10 top-0 left-1/2 -translate-x-1/2"
       src="/images/more-content-impact.svg" 
       alt="Seta direcionando o usuário ao conteúdo"
     >
-    <div class="max-w-sm w-full flex flex-col items-center gap-4">
+    <div class="sm:max-w-sm w-full flex flex-col items-center gap-4">
       <h3 class="font-semibold text-2xl text-center text-zinc-950">
         Diga adeus a Scripts de Vendas e SPIN Selling
       </h3>
 
-      <CTA />
+      <CTA className="w-fit text-center px-4" url="/">
+        Quero vender na primeira conversa
+        <div class="hidden sm:block">
+          <WhatsApp />
+        </div>
+      </CTA>
     </div>
 
 
