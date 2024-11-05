@@ -3,14 +3,22 @@ import CTA from '@/components/CTA.astro'
 import Container from '@/components/Container.astro'
 import DateBadge from '@/components/Hero/DateBadge.astro'
 import Headline from '@/components/Hero/Headline.astro'
+import WhatsApp from '@/components/WhatsApp.astro'
 ---
 <section class="relative min-h-dvh h-full w-full md2:flex justify-center items-center bg-[url('/images/hero/bg-small.webp')] md2:bg-[url('/images/hero/bg-large.webp')] bg-top bg-cover bg-no-repeat">
-  <Container class='min-h-dvh h-full flex items-center px-5'>
-    <div class="max-w-2xl md2:max-w-[558px] md2:w-full flex flex-col items-center md2:items-start gap-4 md2:gap-8 mx-auto md2:mx-0 py-24">
-      <img class="h-10" src="/images/logo.svg" alt="Logo Aula Magna" >     
+  <div class="absolute z-0 top-0 left-0 w-full h-full bg-gradient-to-b from-transparent from-50% to-zinc-950" />
+  <Container class='relative z-10 min-h-dvh h-full flex items-end md2:items-center px-5'>
+    <div class="max-w-2xl md2:max-w-[558px] md2:w-full flex flex-col items-center md2:items-start gap-4 md2:gap-8 mx-auto md2:mx-0 py-8 md2:py-24">
+      <img class="h-10" src="/images/logo.svg" alt="Logo Aula Magna" >  
+
       <Headline />
       <DateBadge />
-      <CTA />
+
+      <CTA url='/'>
+        Quero vender na primeira conversa
+        <WhatsApp />
+      </CTA>
+
     </div>
   </Container>
 </section>
