@@ -4,6 +4,7 @@ import Container from '@/components/Container.astro'
 import DateBadge from '@/components/Hero/DateBadge.astro'
 import Headline from '@/components/Hero/Headline.astro'
 import WhatsApp from '@/components/WhatsApp.astro'
+import { linkPvWhatsApp } from '@/data/contact'
 ---
 <section class="relative min-h-dvh h-full w-full md2:flex justify-center items-center bg-[url('/images/hero/bg-small.webp')] md2:bg-[url('/images/hero/bg-large.webp')] bg-top bg-cover bg-no-repeat">
   <div class="absolute z-0 top-0 left-0 w-full h-full bg-gradient-to-b from-transparent from-50% to-zinc-950" />
@@ -14,7 +15,7 @@ import WhatsApp from '@/components/WhatsApp.astro'
       <Headline />
       <DateBadge />
 
-      <CTA url='/'>
+      <CTA url={linkPvWhatsApp}>
         Quero vender na primeira conversa
         <WhatsApp />
       </CTA>

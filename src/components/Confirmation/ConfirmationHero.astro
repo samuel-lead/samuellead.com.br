@@ -2,6 +2,7 @@
 import Container from "@/components/Container.astro";
 import WhatsApp from "@/components/WhatsApp.astro";
 import CTA from "@/components/CTA.astro";
+import { linkGroupWhatsApp } from "@/data/contact";
 
 ---
 
@@ -20,7 +21,7 @@ import CTA from "@/components/CTA.astro";
           </h2>
         </div>
         
-        <CTA url="/">
+        <CTA url={linkGroupWhatsApp}>
           Entrar no grupo
           <WhatsApp />
         </CTA>

@@ -4,6 +4,7 @@ import Title from "@/components/Title.astro";
 import BigNumbers from '@/components/Biography/BigNumbers.astro'
 import CTA from "@/components/CTA.astro";
 import WhatsApp from "@/components/WhatsApp.astro";
+import { linkPvWhatsApp } from "@/data/contact";
 ---
 
 <section class="py-[120px] flex flex-col items-center gap-8 px-5">
@@ -44,7 +45,7 @@ import WhatsApp from "@/components/WhatsApp.astro";
     </div>
   </Container>
 
-  <CTA url="/">
+  <CTA url={linkPvWhatsApp}>
     Quero vender na primeira conversa
     <WhatsApp />
   </CTA>
