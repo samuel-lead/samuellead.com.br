@@ -15,12 +15,13 @@ import WhatsApp from "@/components/WhatsApp.astro";
         src="/images/biography/img-bio.webp" 
         alt="Foto do expert"
       >
+
+      <div class="md2:hidden absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[2px] bg-gradient-to-r from-transparent via-zinc-50 to-transparent" />
+      <div class="hidden md2:block absolute right-0 top-1/2 -translate-y-1/2 w-[2px] h-full bg-gradient-to-b from-transparent via-zinc-50 to-transparent" />
     </div>
 
-    <div class="hidden lg:block absolute z-10 top-0 left-1/2 -translate-x-1/2 w-px h-full bg-gradient-to-b from-transparent via-zinc-50 to-transparent" />
-
     <!-- TEXT -->
-    <div class="w-full md2:w-1/2 flex flex-col gap-8 p-8 lg:p-16 bg-zinc-900/50 backdrop-blur-sm border border-zinc-50/15 overflow-hidden">
+    <div class="w-full md2:w-1/2 flex flex-col gap-8 p-4 sm:p-8 lg:p-16 bg-zinc-900/50 backdrop-blur-sm border border-zinc-50/15 overflow-hidden">
       <Title className="items-start" tag="Quem sou eu?">
         Samuel Pereira
       </Title>
