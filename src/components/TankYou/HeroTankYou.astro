@@ -1,0 +1,31 @@
+---
+import CTA from "../CTA.astro";
+import Container from "../Container.astro";
+import WhatsApp from "../WhatsApp.astro";
+import { Button } from "../ui/button";
+
+---
+
+<section class="relative min-h-dvh h-full w-full md2:flex justify-center items-center bg-[url('/INSERIR_BACKGROUND.webp')] md2:bg-[url('/images/tankyou/bg-tankyou.webp')] bg-top bg-cover bg-no-repeat">
+  <div class="w-full h-full bg-gradient-to-b from-transparent to-zinc-950/90">
+    <Container class='min-h-dvh h-full flex justify-center items-center px-5'>
+      <div class="max-w-3xl flex flex-col items-center gap-8">
+        <img class="h-10" src="/images/logo.svg" alt="Logo Aula Magna" >
+        
+        <div class="flex flex-col gap-4">
+          <h1 class="font-semibold text-2xl sm:text-3xl text-center leading-tight uppercase">
+            A sua inscrição já está <span class="bg-gradient-to-r from-yellow-500 from-0% via-yellow-400 via-30% to-yellow-200 to-110% text-transparent bg-clip-text">garantida.</span>
+          </h1>
+          <h2 class="max-w-lg text-center text-zinc-400 leading-normal mx-auto">
+            Agora, você precisa entrar no grupo de WhatsApp. É por lá que você será notificado e receberá o link da aula. 
+          </h2>
+        </div>
+        
+        <Button className="font-semibold max-w-80 w-full text-base text-wrap leading-tight text-zinc-950 py-4 px-4 xs:px-8 rounded-full bg-gradient-to-r from-yellow-500 from-0% via-yellow-400 via-30% to-yellow-200 to-110% shadow-xl shadow-zinc-950/25 transition-all hover:bg-yellow-500 hover:scale-95">
+          Entrar no grupo
+          <WhatsApp />
+        </Button>
+      </div>
+    </Container>
+  </div>
+</section>
