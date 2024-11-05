@@ -3,23 +3,24 @@ import Container from "@/components/Container.astro";
 import Title from "@/components/Title.astro";
 import BigNumbers from '@/components/Biography/BigNumbers.astro'
 import CTA from "@/components/CTA.astro";
+import WhatsApp from "@/components/WhatsApp.astro";
 ---
 
-<section class="py-[120px] flex flex-col items-center gap-8">
-  <Container class="relative flex rounded-2xl border border-zinc-50/15 overflow-hidden">
+<section class="py-[120px] flex flex-col items-center gap-8 px-5">
+  <Container class="relative flex flex-col md2:flex-row rounded-2xl border border-zinc-50/15 overflow-hidden">
     <!-- IMAGE -->
-    <div class="relative w-1/2">
+    <div class="relative max-h-[420px] md2:max-h-none w-full md2:w-1/2 overflow-hidden">
       <img 
-        class="absolute -top-28 object-cover"
+        class="md2:absolute w-full -mt-20 sm:-mt-32 object-cover"
         src="/images/biography/img-bio.webp" 
         alt="Foto do expert"
       >
     </div>
 
-    <div class="absolute z-10 top-0 left-1/2 -translate-x-1/2 w-px h-full bg-gradient-to-b from-transparent via-zinc-50 to-transparent" />
+    <div class="hidden lg:block absolute z-10 top-0 left-1/2 -translate-x-1/2 w-px h-full bg-gradient-to-b from-transparent via-zinc-50 to-transparent" />
 
     <!-- TEXT -->
-    <div class="w-1/2 flex flex-col gap-8 p-16">
+    <div class="w-full md2:w-1/2 flex flex-col gap-8 p-8 lg:p-16 bg-zinc-900/50 backdrop-blur-sm border border-zinc-50/15 overflow-hidden">
       <Title className="items-start" tag="Quem sou eu?">
         Samuel Pereira
       </Title>
@@ -42,5 +43,8 @@ import CTA from "@/components/CTA.astro";
     </div>
   </Container>
 
-  <CTA />
+  <CTA url="/">
+    Quero vender na primeira conversa
+    <WhatsApp />
+  </CTA>
 </section>
