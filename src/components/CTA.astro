@@ -10,7 +10,7 @@ const { className, url } = Astro.props
 ---
 
   <a 
-    class={cn("font-semibold w-full sm:w-fit flex justify-center items-center gap-2 text-base text-wrap leading-tight text-zinc-950 py-4 px-4 xs:px-8 rounded-full bg-gradient-to-r from-yellow-500 from-0% via-yellow-400 via-30% to-yellow-200 to-110% shadow-xl shadow-zinc-950/25 transition-all hover:bg-yellow-500 hover:scale-95", className)}
+    class={cn("font-semibold w-full sm:w-fit flex justify-center items-center gap-2 text-base text-wrap leading-tight text-zinc-950 py-4 px-4 sm:px-8 rounded-full bg-gradient-to-r from-yellow-500 from-0% via-yellow-400 via-30% to-yellow-200 to-110% shadow-xl shadow-zinc-950/25 transition-all hover:bg-yellow-500 hover:scale-95", className)}
     href={url}
   >
     <slot />
