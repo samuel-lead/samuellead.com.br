@@ -7,6 +7,16 @@ import WhatsApp from '@/components/WhatsApp.astro'
 import { linkPvWhatsApp } from '@/data/contact'
 ---
 <section class="relative min-h-dvh h-full w-full md2:flex justify-center items-center bg-[url('/images/hero/bg-small.webp')] md2:bg-[url('/images/hero/bg-large.webp')] bg-top bg-cover bg-no-repeat">
+  <img 
+    class="block md2:hidden absolute z-10 top-[20%] left-[25%] animate-pulse" 
+    src="/images/pix-notification-small.svg" 
+    alt="Notificação de pix"
+  >
+  <img 
+    class="hidden md2:block absolute z-10 top-[60%] right-[13%] max-h-11 animate-pulse" 
+    src="/images/pix-notification-large.svg" 
+    alt="Notificação de pix"
+  >
   <div class="absolute z-0 top-0 left-0 w-full h-full bg-gradient-to-b from-transparent from-50% to-zinc-950" />
   <Container class='relative z-10 min-h-dvh h-full flex items-end md2:items-center px-5'>
     <div class="max-w-2xl md2:max-w-[558px] md2:w-full flex flex-col items-center md2:items-start gap-4 md2:gap-8 mx-auto md2:mx-0 py-8 md2:py-24">
